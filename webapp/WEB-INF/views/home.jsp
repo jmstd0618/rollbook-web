@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page contentType="text/html; charset=UTF-8" session="false" %>
 <html>
 <head>
     <title>Home</title>
@@ -21,6 +21,8 @@
     var sTest = "This is Test Text";
     (function () {
         console.log(sTest);
+        var $divTest = $("._div_test");
+        $divTest.text("이것은 자바스크립트를 통해서 수정된 글귀구만유.");
     })();
 
 </script>
