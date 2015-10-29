@@ -64,7 +64,6 @@
         console.log(sTest);
         var $divTest = $("._div_test");
         $divTest.text("이것은 자바스크립트를 통해서 수정된 글귀구만유.");
-        $divTest.text("1211111");
     })();
 
 </script>
