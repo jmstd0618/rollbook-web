@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+       <settings>
+              <setting name="cacheEnabled" value="true" />
+
+              <!-- lazy로딩 수행여부 -->
+              <setting name="lazyLoadingEnabled" value="true" />
+              <setting name="aggressiveLazyLoading" value="true" />
+
+              <setting name="useGeneratedKeys" value="true" />
+
+              <!-- mybatis 의 defaultExecutorType를 설정한다 기본값 : SIMPLE -->
+              <!-- dbcp사용시 preparedStatement cache 를 수행하므로 REUSE를 사용할 필요는 없음. -->
+              <setting name="defaultExecutorType" value="SIMPLE" />
+
+              <!--defaultQueryTiemout을 설정한다. 초단위 -->
+              <!--setting name="defaultStatementTimeout" value="5" /-->
+       </settings>
+
+       <typeAliases>
+              <typeAlias alias="map" type="java.util.Map" />
+              <typeAlias alias="long" type="java.lang.Long"/>
+              <typeAlias alias="int" type="java.lang.Integer" />
+              <typeAlias alias="string" type="java.lang.String" />
+              <typeAlias alias="date" type="java.util.Date" />
+              <typeAlias alias="list" type="java.util.List" />
+       </typeAliases>
+</configuration>
