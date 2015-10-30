@@ -19,6 +19,7 @@ Class
     -
 
 Teacher
+    - 이름
 
 Student
     - 학생ID(숫자)
