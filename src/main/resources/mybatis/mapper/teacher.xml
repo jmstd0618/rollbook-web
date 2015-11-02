@@ -5,4 +5,14 @@
         INSERT INTO teacher(name, birth_day, phone_no, class_id)
         VALUES(#{name}, #{birthDay}, #{phoneNo}, #{classId});
     </insert>
+    <update id="updateTeacher" parameterType="map">
+        UPDATE teacher
+        SET
+          name = #{name},
+          birth_day = #{birthDay},
+          phone_no = #{phoneNo},
+          class_id = #{classId}
+        WHERE
+          teacher_id = #{teacherId};
+    </update>
 </mapper>

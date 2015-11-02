@@ -25,4 +25,25 @@ public class TeacherDao {
 
         sqlSession.insert(DaoConstants.NAMESPACE_TEACHER + "insertTeacher", params);
     }
+
+    /**
+     * 선생님 정보를 Update한다.
+     * (class_id는 외래키이기 때문에, 에러가 발생할 수 있다.)
+     * @param teacherId
+     * @param name
+     * @param birthDay
+     * @param phoneNo
+     * @param classId
+     */
+    public void updateTeacher(int teacherId, String name, String birthDay, String phoneNo, Integer classId){
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("teacherId", teacherId);
+        params.put("name", name);
+        params.put("birthDay", birthDay);
+        params.put("phoneNo", phoneNo);
+        params.put("classId", classId);
+
+        sqlSession.update(DaoConstants.NAMESPACE_TEACHER + "updateTeacher", params);
+
+    }
 }
