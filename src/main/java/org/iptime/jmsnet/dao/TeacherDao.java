@@ -12,7 +12,7 @@ import java.util.Map;
  * Created by Jung-MinSung on 2015-10-31.
  */
 @Repository
-public class TeacherDAO {
+public class TeacherDao {
     @Autowired
     private SqlSessionTemplate sqlSession;
 

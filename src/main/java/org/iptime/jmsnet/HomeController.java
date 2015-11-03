@@ -1,7 +1,7 @@
 package org.iptime.jmsnet;
 
-import org.iptime.jmsnet.dao.SampleDAO;
-import org.iptime.jmsnet.dao.TeacherDAO;
+import org.iptime.jmsnet.dao.SampleDao;
+import org.iptime.jmsnet.dao.TeacherDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +25,10 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
 	@Autowired
-	private SampleDAO sampleDAO;
+	private SampleDao sampleDAO;
 
 	@Autowired
-	private TeacherDAO teacherDao;
+	private TeacherDao teacherDao;
 
 
 	/**
