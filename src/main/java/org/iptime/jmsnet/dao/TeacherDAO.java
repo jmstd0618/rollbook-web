@@ -12,7 +12,7 @@ import java.util.Map;
  * Created by Jung-MinSung on 2015-10-31.
  */
 @Repository
-public class TeacherDao {
+public class TeacherDAO {
     @Autowired
     private SqlSessionTemplate sqlSession;
 
@@ -27,6 +27,8 @@ public class TeacherDao {
     }
 
     /**
+     * 선생님 정보를 Update한다.
+     * (class_id는 class table의 외래키이므로 잘못된 값을 입력시 에러가 발생할 수 있다.)
      * @param teacherId
      * @param name
      * @param birthDay

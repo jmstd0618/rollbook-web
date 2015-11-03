@@ -18,7 +18,7 @@ import java.util.Map;
  * 하하
  */
 @Repository
-public class SampleDao {
+public class SampleDAO {
     @Autowired
     private SqlSessionTemplate sqlSession;
 
