@@ -27,8 +27,6 @@ public class TeacherDao {
     }
 
     /**
-     * 선생님 정보를 Update한다.
-     * (class_id는 외래키이기 때문에, 에러가 발생할 수 있다.)
      * @param teacherId
      * @param name
      * @param birthDay

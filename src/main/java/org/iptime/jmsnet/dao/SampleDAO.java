@@ -15,9 +15,10 @@ import java.util.Map;
 
 /**
  * @author minsung.jung
+ * 하하
  */
 @Repository
-public class SampleDAO {
+public class SampleDao {
     @Autowired
     private SqlSessionTemplate sqlSession;
 
