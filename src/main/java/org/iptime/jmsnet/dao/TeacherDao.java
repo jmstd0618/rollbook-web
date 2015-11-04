@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,8 +28,8 @@ public class TeacherDao {
     }
 
     /**
-     * ¼±»ı´Ô Á¤º¸¸¦ UpdateÇÑ´Ù.
-     * (class_id´Â class tableÀÇ ¿Ü·¡Å°ÀÌ¹Ç·Î Àß¸øµÈ °ªÀ» ÀÔ·Â½Ã ¿¡·¯°¡ ¹ß»ıÇÒ ¼ö ÀÖ´Ù.)
+     * ì„ ìƒë‹˜ ì •ë³´ë¥¼ Updateí•œë‹¤.
+     * (class_idëŠ” ì™¸ë˜í‚¤ì´ê¸° ë•Œë¬¸ì—, ì—ëŸ¬ê°€ ë°œìƒí•  ìˆ˜ ìˆë‹¤.)
      * @param teacherId
      * @param name
      * @param birthDay
@@ -45,5 +46,9 @@ public class TeacherDao {
 
         sqlSession.update(DaoConstants.NAMESPACE_TEACHER + "updateTeacher", params);
 
+    }
+
+    public List<Map<String, Object>> selectTeacherList(){
+        return sqlSession.selectList(DaoConstants.NAMESPACE_TEACHER + "selectTeacherList");
     }
 }

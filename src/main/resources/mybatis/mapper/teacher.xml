@@ -15,4 +15,11 @@
         WHERE
           teacher_id = #{teacherId};
     </update>
+
+    <select id="selectTeacherList" parameterType="map" resultType="map">
+        SELECT
+          teacher_id, name, birth_day, phone_no, class_id
+        FROM
+          teacher
+    </select>
 </mapper>
