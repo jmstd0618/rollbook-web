@@ -46,8 +46,6 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate);
 		try {
 			List<Map<String, Object>> userList = sampleDAO.selectUserList();
-			teacherDao.insertTeacher("JungMS", "2015.05.05", "01041808246", null);
-
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 		}
