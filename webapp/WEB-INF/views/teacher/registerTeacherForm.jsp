@@ -20,9 +20,25 @@
   <title></title>
 </head>
 <body>
-  hi ${name}
-
-  hoy
-
+  hi ${name}  hoy
+  <form role="form" class="default-margin" id="fileUrl" action="/teacher/register" accept-charset="UTF-8" method="post">
+    <div class="form-group">
+      <label for="name">선생님 이름</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="이름을 입력해주세요.">
+    </div>
+    <div class="form-group">
+      <label for="birthDay">생일</label>
+      <input type="text" class="form-control" name="birthDay" id="birthDay" placeholder="이름을 입력해주세요.">
+    </div>
+    <div class="form-group">
+      <label for="phoneNo">연락처</label>
+      <input type="text" class="form-control" name="phoneNo" id="phoneNo" placeholder="이름을 입력해주세요.">
+    </div>
+    <div class="form-group">
+      <label for="classId">반</label>
+      <input type="text" class="form-control" name="classId" id="classId" placeholder="이름을 입력해주세요.">
+    </div>
+    <button type="submit" class="btn btn-sm btn-success">등록</button>
+  </form>
 </body>
 </html>
